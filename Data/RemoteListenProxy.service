@@ -1,0 +1,9 @@
+[Unit]
+Description=Remote Listen Proxy
+
+[Service]
+User=nobody
+ExecStart=/usr/bin/dotnet /usr/share/app/RemoteListenProxy/server.dll /usr/share/app/RemoteListenProxy/server.conf
+
+[Install]
+WantedBy=multi-user.target
