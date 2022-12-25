@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "server": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Temp\\papp.conf\""
+    }
+  }
+}

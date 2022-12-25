@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "profile1": {
+      "commandName": "Project",
+      "commandLineArgs": "server.conf"
+    }
+  }
+}
