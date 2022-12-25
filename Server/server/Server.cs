@@ -29,11 +29,11 @@ namespace server
 
         public void Run()
         {
-            var args = this._config.Split(' ');
+            var config = RemoteListenProxy.UserConfig.Parse(this._config);
 
-            this._clientPort = int.Parse(args[0]);
-            this._workerPort = int.Parse(args[1]);
-            this._workerAuthSecret = args[2];
+            this._clientPort = config.clientPort;
+            this._workerPort = config.workerPort;
+            this._workerAuthSecret = config.workerSecret;
 
             var task = this.RunClientListener();
             task = this.RunWorkerListener();

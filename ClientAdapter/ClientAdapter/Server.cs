@@ -41,7 +41,7 @@ namespace ClientAdapter
 
         private void ParseUserConfig()
         {
-            var cfg = UserConfig.Parse(this._config);
+            var cfg = RemoteListenProxy.UserConfig.Parse(this._config);
 
             this._workerPort = cfg.workerPort;
             this._workerAuthSecret = cfg.workerSecret;
